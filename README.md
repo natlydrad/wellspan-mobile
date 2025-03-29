@@ -1,76 +1,44 @@
-## 📱 Mobile Version
-👉 Want to use this on your phone? [Check out the WellSpan Mobile App](https://github.com/natlydrad/wellspan-mobile)
+# WellSpan – Mobile App
 
----
+A mobile version of the WellSpan lifestyle forecasting tool, built with React Native + Expo.
 
-## ✨ Credits
-Created with 🤍🐸 by nat for sky lab.
+Users input basic health and lifestyle data to forecast their **Life Expectancy** and **Quality of Life**, compared with the **Average American** and **Ideal** lifestyles.
 
----
-
-## 📱 Mobile App README (for repo: `wellspan-mobile`)
-
-# WellSpan Mobile App (React Native + Expo)
-
-A companion mobile app to the WellSpan web app. Users input lifestyle data and receive a forecast of their quality of life and life expectancy, visualized on a chart.
-
----
-
-## 📱 Features
-- Clean React Native interface
-- Same logic and backend API as the web version
-- Line chart to visualize forecast over time
-- Easy reset/start-over flow
-
----
+## 📲 Features
+- Native sliders and radio buttons for lifestyle input
+- Real-time chart showing QoL projection
+- Fully responsive on iOS and Android
+- Connects to the same backend as the web app
 
 ## ⚙️ Tech Stack
-| Tech               | Description         |
-|--------------------|---------------------|
-| React Native       | Frontend framework  |
-| Expo               | Build & dev tool    |
-| react-native-chart-kit | Chart rendering |
-| Flask (API)        | Same as web app     |
+- **React Native** + Expo
+- **Backend:** Connects to Flask API (Render)
+- **Charting:** `react-native-chart-kit`
+- **Tested with:** Expo Go
+
+## 🚀 Running Locally
+
+### 1. Clone the repo
+```bash
+git clone https://github.com/your-username/wellspan-mobile.git
+cd wellspan-mobile
+```
+
+### 2. Install dependencies
+```bash
+npm install
+```
+
+### 3. Run with Expo
+```bash
+npx expo start
+```
+
+> Use the QR code with Expo Go to preview on your phone.
+>
+> Be sure to update the `fetch()` URL in `FormScreen.js` to match your live backend.
 
 ---
 
-## 🚀 Getting Started
+Created with ❤️ by nat 🐸 for sky lab ⭐️.
 
-1. **Clone the repo:**
-   ```bash
-   git clone https://github.com/yourusername/wellspan-mobile.git
-   cd wellspan-mobile
-   ```
-
-2. **Install dependencies:**
-   ```bash
-   npm install
-   ```
-
-3. **Run on Expo Go:**
-   ```bash
-   npx expo start
-   ```
-
-4. **Ensure `.env` has:**
-   ```env
-   API_URL=https://wellspan-backend.onrender.com
-   ```
-
----
-
-## 📡 Backend API
-Uses the same `/calculate` endpoint as the web app.
-Make sure the backend is deployed or running locally.
-
----
-
-## 🧪 Testing Tips
-- Test with realistic inputs (age, height, etc.)
-- If your chart is flat: check if forecast data is coming back as expected
-- Use `console.log(results.qolForecast)` in ResultScreen.js to debug
-
----
-
-## 🔗 Related
-- Web App & API: https://github.com/yourusername/wellspan
